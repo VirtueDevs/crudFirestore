@@ -21,7 +21,8 @@ public class CrudFirebase {
 
     public CrudFirebase() throws Exception {
 //Autenticacion del firestore
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream("src/main/resources/crudstore-ab1e6-b51e10e99e33.json"));
+        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream
+        		("ArchivoJSON"));
         FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(credentials)
                 .build();
